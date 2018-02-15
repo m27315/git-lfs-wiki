@@ -11,6 +11,7 @@
 * [github/lfs-test-server](https://github.com/github/lfs-test-server) - reference server implementation
 * [meltingice/git-lfs-s3](https://github.com/meltingice/git-lfs-s3) - store large files in Amazon S3
 * [mgax/lfs](https://github.com/mgax/lfs) - a Python implementation of Git LFS Server that stores blobs on the filesystem (v1 legacy api only).
+* [alanedwardes/Estranged.Lfs](https://github.com/alanedwardes/Estranged.Lfs) - a C#.net implementation using AWS Lambda, API Gateway and S3.
 
 # Paid Commercial (some with free versions for small teams)
 * [GitHub.com](https://github.com/) - Supports git-lfs for files up to 2 GiB \([pricing](https://github.com/pricing)\)
