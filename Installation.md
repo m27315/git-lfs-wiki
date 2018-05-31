@@ -62,7 +62,7 @@ An additional option of `--skip-smudge` can be added to skip automatic downloadi
 
 ### Windows ###
 
-1. Download the windows installer from [here](https://github.com/github/git-lfs/releases)
+1. Download the windows installer from [here](https://github.com/git-lfs/git-lfs/releases)
 2. Run the windows installer 
 3. Start a command prompt/or git for windows prompt and run `git lfs install`
 
@@ -85,7 +85,7 @@ RUN build_deps="curl ca-certificates" && \
 
 To install on any supported operating system, manually install git-lfs with no man pages.
 
-Only one file is required for git-lfs, the `git-lfs` binary. i386 and x86_64 versions are available [here](https://github.com/github/git-lfs/releases) for FreeBSD, Linux, Mac and Windows. Currently, linux arm6 must be compiled from source
+Only one file is required for git-lfs, the `git-lfs` binary. i386 and x86_64 versions are available [here](https://github.com/git-lfs/git-lfs/releases) for FreeBSD, Linux, Mac and Windows. Currently, linux arm6 must be compiled from source
 
 1. Install git version 1.8.2 or newer
 2. Download and put the git-lfs (.exe for windows) in your path, and `git lfs` commands start working, as long as both git and git-lfs are in your path.
@@ -93,12 +93,12 @@ Only one file is required for git-lfs, the `git-lfs` binary. i386 and x86_64 ver
 ## Source ##
 
 1. Get go. Either use your OS repo or get it [here](https://golang.org/dl/). For best results, use latest stable go to get all the patches
-2. `git clone https://github.com/github/git-lfs.git`
+2. `git clone https://github.com/git-lfs/git-lfs.git`
 3. In the git-lfs directory, run `./script/bootstrap`
 4. The git-lfs binary should appear in the `./bin` directory
 
 Alternatively, you can use go to
 
-1. `go get github.com/github/git-lfs`
+1. `go get github.com/git-lfs/git-lfs`
 2. `$GOPATH/bin/`
-3. Edit/checkout `$GOPATH/src/github.com/github/git-lfs` and run `go build github.com/github/git-lfs` if needed
+3. Edit/checkout `$GOPATH/src/github.com/git-lfs/git-lfs` and run `go build github.com/git-lfs/git-lfs` if needed
