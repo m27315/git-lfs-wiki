@@ -71,9 +71,9 @@ An additional option of `--skip-smudge` can be added to skip automatic downloadi
 For Debian Distros, you can use
 
 ```dockerfile
-RUN build_deps="curl ca-certificates" && \
+RUN build_deps="curl" && \
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ${build_deps} && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends ${build_deps} ca-certificates && \
     curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends git-lfs && \
     git lfs install && \
