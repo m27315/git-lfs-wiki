@@ -259,7 +259,9 @@ TODO:
 
 ## LFS pointer files (Advanced) ##
 
-Git LFS stores a pointer file in the git repo in lieu of the real large file. The pointer is swapped out for the real file at checkout (using `smudge` and `clean`). Normally, you would never see it, but for the curious, you can view the pointer file by `git show HEAD:{filename}`, for example:
+Git LFS stores a pointer file in the git repo in lieu of the real large file. The pointer is swapped out for the real file at checkout (using `smudge` and `clean`).  The `smudge` and `clean` filters are part of core Git and are designed to allow changing a file on checkout (`smudge`) and on commit (`clean`).  Git LFS uses these techniques to replace the pointer files with the actual large files that are in use.
+
+Normally, you would never see it, but for the curious, you can view the pointer file by `git show HEAD:{filename}`, for example:
 
 `cat cat.bin`
 
