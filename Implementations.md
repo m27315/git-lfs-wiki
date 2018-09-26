@@ -10,7 +10,7 @@
 * [Gitea](https://gitea.io/) - Open-source Git platform powered by Go with Git LFS support
 * [GitLab](https://gitlab.com) - Has LFS [support](https://about.gitlab.com/2015/11/23/announcing-git-lfs-support-in-gitlab/) in the GitLab.com, GitLab Community Edition, and GitLab Enterprise Edition
 * [github/lfs-test-server](https://github.com/github/lfs-test-server) - reference server implementation
-* [meltingice/git-lfs-s3](https://github.com/meltingice/git-lfs-s3) - store large files in Amazon S3
+* [meltingice/git-lfs-s3](https://github.com/meltingice/git-lfs-s3) - store large files in Amazon S3 (v1 legacy api only).
 * [mgax/lfs](https://github.com/mgax/lfs) - a Python implementation of Git LFS Server that stores blobs on the filesystem (v1 legacy api only).
 * [alanedwardes/Estranged.Lfs](https://github.com/alanedwardes/Estranged.Lfs) - a C#.net implementation using AWS Lambda, API Gateway and S3.
 
