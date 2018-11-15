@@ -241,12 +241,7 @@ You can also clone using the git protocol, LFS assets will still be pulled down 
 
     git clone git@github.com:username/my_lfs_repo.git destination_dir
 
-A clone will typically be slower than optimal because `git clone` only supports downloading each file in serial. To achieve a faster parallel batch download, temporaily disable git lfs then fetch files in batch
-
-    GIT_LFS_SKIP_SMUDGE=1 git clone https://github.com/username/my_lfs_repo.git destination_dir
-    #git lfs ls-files # optionally see all the - showing the lfs files are not checked out
-    git lfs pull
-    #git lfs ls-files # optionally see all the * showing the lfs files are checked out
+With a reasonably modern Git, there are no longer any performance problems with using a standard `git clone` command.
 
 TODO:
 
