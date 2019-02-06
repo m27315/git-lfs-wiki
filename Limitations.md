@@ -6,4 +6,4 @@ This page lists common issues and feature requests:
 - GitLab currently (as of 11.7.3 CE) has a hard coded timeout for the git-lfs-authenticate token of
 30 minutes. GitLab also lacks support for the **expires_in** or **expires_at** properties which would
 mitigate this issue. See closed issue: ([#3012](https://github.com/git-lfs/git-lfs/issues/3012))
-([comment: (https://github.com/git-lfs/git-lfs/issues/3012#issuecomment-390800554))
+[comment](https://github.com/git-lfs/git-lfs/issues/3012#issuecomment-390800554)
