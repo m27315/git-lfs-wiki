@@ -4,7 +4,7 @@
 
 ## Installing ##
 
-On all operating systems, once git-lfs is installed, `git lfs install` must be run. Each user that intends to use git lfs must run this command, but they only ever need to run it once. git-lfs can be disabled by running `git lfs uninstall`, in which case that user would have to run `git lfs install` again, before git-lfs features work again.
+On all operating systems, once git-lfs is downloaded, `git lfs install` must be run. Each user that intends to use git lfs must run this command, but they only ever need to run it once. git-lfs can be disabled by running `git lfs uninstall`, in which case that user would have to run `git lfs install` again, before git-lfs features work again.
 
 Some users may wish to only enable git-lfs on specific repositories instead of always having it on for all of the repositories. Instead of running `git lfs install` and enabling git-lfs for that entire user, `git lfs install --local` can be used instead on a per repository basis. 
 
