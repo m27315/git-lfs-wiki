@@ -9,9 +9,15 @@ Sometimes things don't go exactly right.  Here are some tips for basic troublesh
 
 ## Client-Side Issues
 
+### Setup
+
 * Check that you've run `git lfs install` or `git lfs install --skip-repo` to set up your Git configuration to use Git LFS.  Without this step, Git LFS won't work.  There isn't a way to do this automatically for users without changing the system-wide configuration file (usually `/etc/gitconfig`).
-* Check that the output of running `git lfs env` produces what you think it should produce.  The `git config` entries at the bottom should contain non-empty values; if they are empty, run `git lfs install`.  Similarly, the endpoint URLs should point to the server you think they should, and the entries starting with _Access_ should reflect the type of authentication you're using (`basic`, for most username-and-password or token authentication).
 * If you get a message that says `'lfs' is not a git command`, see the [[Installation]] page for steps on how to make sure it's installed properly.
+* Check that the output of running `git lfs env` produces what you think it should produce.  The `git config` entries at the bottom should contain non-empty values; if they are empty, run `git lfs install`.  Similarly, the endpoint URLs should point to the server you think they should, and the entries starting with _Access_ should reflect the type of authentication you're using (`basic`, for most username-and-password or token authentication).
+
+### Common Issues
+
+* If you're adding a new pattern with `git lfs track` and it doesn't seem to be effective, try running `git check-attr filter FILENAME` to make sure the `filter` attribute is set to `lfs`.  If it's not, adjust your `.gitattributes` file so that the patterns match your file.
 
 ## Server-Side Issues
 
