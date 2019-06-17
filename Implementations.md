@@ -16,7 +16,7 @@
 * [alanedwardes/Estranged.Lfs](https://github.com/alanedwardes/Estranged.Lfs) - a C#.net implementation using AWS Lambda, API Gateway and S3.
 * [kzwang/node-git-lfs](https://github.com/kzwang/node-git-lfs) - a Javascript implementation that supports S3 and MongoDB GridFS
 * [saracen/lfscache](https://github.com/saracen/lfscache) - a Git LFS Caching proxy, for putting in-between multiple clients (users, build servers) and your LFS server.
-* [gitlit](https://github.com/S2-/gitlit)A gui for Git LFS file locks
+* [gitlit](https://github.com/S2-/gitlit) - A gui for Git LFS file locks
 
 # Paid Commercial (some with free versions for small teams)
 * [GitHub.com](https://github.com/) - Supports git-lfs for files up to 2 GiB \([pricing](https://github.com/pricing)\)
