@@ -14,6 +14,8 @@ An additional option of `--skip-smudge` can be added to skip automatic downloadi
 
 ### Debian and Ubuntu ###
 
+Ubuntu 18.04, Debian 10, and newer versions of those OSes offer a `git-lfs` package. If you'd like to use that and don't need the latest version, skip step 1 below.
+
 1. `curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | sudo bash`
 2. `sudo apt-get install git-lfs`
 3. `git lfs install`
