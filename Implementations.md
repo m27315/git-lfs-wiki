@@ -1,7 +1,7 @@
 # Open Source
 * [artemkin/git-lfs-server](https://github.com/artemkin/git-lfs-server) - Git LFS server with PAM authentication
-* [bozaro/git-as-svn](https://github.com/bozaro/git-as-svn) - subversion frontend for git repositories with embedded git-lfs server
-* [bozaro/git-lfs-java](https://github.com/bozaro/git-lfs-java/) - Git LFS Java API implementation (client, server, pointer manipulation)
+* [bozaro/git-as-svn](https://github.com/bozaro/git-as-svn) - subversion frontend for git repositories with [embedded Git LFS server](https://bozaro.github.io/git-as-svn/htmlsingle/git-as-svn.html#_lfs)
+* [bozaro/git-lfs-java](https://github.com/bozaro/git-lfs-java/) - Git LFS Java library (client, server, pointer manipulation)
 * [cbartz/git-lfs-swift-server](https://github.com/cbartz/git-lfs-swift-server) - Stores files in an OpenStack Swift cluster
 * [cbartz/git-lfs-swift-transfer-agent](https://github.com/cbartz/git-lfs-swift-transfer-agent) - Implements the custom transfer type swift, which is capable of handling large objects (which exceed the default maximum single object size)
 * [cloudmazing/lfs-server-go](https://github.com/cloudmazing/lfs-server-go) - S3/local file support, Cassandra/redis/boltdb metadata store
