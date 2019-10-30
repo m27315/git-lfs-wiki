@@ -117,7 +117,7 @@ Endpoint=https://my_other_server.example.com/foo/bar/info/lfs (auth=none)
 ...
 ```
 
-*Note: only `http://`/`https://` endpoints are supported by the git-lfs client. There is currently no direct `ssh://` or `file://`. This means you can NOT have a local file lfs repo like you can for git. You CAN run a local lfs-test-server, if you want to run everything locally. `http://` should never be used over the internet, as your password will not be securely encrypted. Only use `https://`*
+*Note: `http://`/`https://` endpoints are supported by the git-lfs client. As of 2.9.0, there is also support for `file:///` URLs (but not local paths); note that the colon character must be escaped as `%3a`. There is currently no direct `ssh://` support. You CAN run a local lfs-test-server if you want. `http://` should never be used over the internet, as your password will not be securely encrypted. Only use `https://`*
 
 ## Credential caching/storage ##
 
