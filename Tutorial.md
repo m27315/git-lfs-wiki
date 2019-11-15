@@ -24,8 +24,8 @@ You should already have git-lfs [installed](Installation). To ensure that git-lf
 
 Now let's add some large files to be tracked by git-lfs:
 
-    head -c 1M /dev/urandom > cat.bin
-    head -c 1M /dev/urandom > dog.bin
+    dd if=/dev/urandom of=cat.bin bs=1048576 count=1
+    dd if=/dev/urandom of=dog.bin bs=1048576 count=1
 
 Now we are going ensure that git-lfs is tracking the large `*.bin` files we just created. Tracking means that in subsequent commits, these files will now be LFS files.
 
