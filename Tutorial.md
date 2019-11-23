@@ -199,7 +199,7 @@ plain.txt
 README.md
 ```
 
-It's important to understand that tracking an LFS file does not remove it from a previous version of history. If you create a repo without LFS before, and put hundreds of MB in there, after all these steps, the old version still has all the large files in git, not in LFS. There is a discussion on how to rewrite history [here](https://github.com/github/git-lfs/issues/326), but the general the best tool depends on the use case. See the next section for an introduction to some of the available tools.
+It's important to understand that tracking an LFS file does not remove it from a previous version of history. If you create a repo without LFS before, and put hundreds of MB in there, after all these steps, the old version still has all the large files in git, not in LFS. There is a discussion on how to rewrite history [here](https://github.com/github/git-lfs/issues/326), but in general the best tool depends on the use case. See the next section for an introduction to some of the available tools.
 
 ## Migrating existing repository data to LFS ##
 
