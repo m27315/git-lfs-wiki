@@ -25,6 +25,7 @@
 * [Bitbucket Cloud](https://bitbucket.org/product/) - Supports git-lfs \([pricing](https://bitbucket.org/product/pricing?tab=host-in-the-cloud)\)
 * [Bitbucket Server](https://bitbucket.org/product/server) - Supports Git LFS in version [4.3](https://confluence.atlassian.com/display/BitbucketServer/Bitbucket+Server+4.3+release+notes) and later
 * [Microsoft Visual Studio Team Services](https://www.visualstudio.com/team-services/) - git-lfs supported in all VSTS hosted accounts and TFS 2015+
+* [GitLab](https://about.gitlab.com/pricing/) - LFS supported, see [help page](https://docs.gitlab.com/ee/administration/lfs/manage_large_binaries_with_git_lfs.html) for setup
 
 # Free Commercial
 * [joerg/stash-git-lfs](https://github.com/joerg/stash-git-lfs) - Early version of a Plugin for Atlassian Stash (recently rebranded as BitBucket Server)
