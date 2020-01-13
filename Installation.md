@@ -78,6 +78,8 @@ Only one file is required for git-lfs, the `git-lfs` binary. i386 and x86_64 ver
 
 ## Source ##
 
+Building requires a standard Unix environment with GNU make and bash.  On Windows, you should install GNU make (e.g., via Chocolatey) and build under Git Bash.
+
 1. Ensure that you have a reasonably modern version of [Go](https://golang.org).
 2. If you are using Windows, build `goversioninfo` (e.g., with `go get github.com/josephspurrier/goversioninfo/cmd/goversioninfo`) and place the binary in your PATH.
 3. Obtain a copy of the repository, either with `git clone` (into the appropriate location within your `$GOPATH`), or with `go get`, i.e., `go get github.com/git-lfs/git-lfs`.
