@@ -27,7 +27,7 @@ Now let's add some large files to be tracked by git-lfs:
     dd if=/dev/urandom of=cat.bin bs=1048576 count=1
     dd if=/dev/urandom of=dog.bin bs=1048576 count=1
 
-Now we are going ensure that git-lfs is tracking the large `*.bin` files we just created. Tracking means that in subsequent commits, these files will now be LFS files.
+Now we are going to ensure that git-lfs is tracking the large `*.bin` files we just created. Tracking means that in subsequent commits, these files will now be LFS files.
 
 *Note: This does NOT mean that versions of the files in previous commits will be converted. That involves a process commonly known as "rewriting history" and is described in the [migration section](#migrating-existing-repository-data-to-lfs).*
 
