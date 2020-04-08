@@ -81,10 +81,3 @@ Remote "origin" does not support the LFS locking API. Consider disabling it with
   $ git config 'lfs.http://git-server.com/user/test.locksverify' false
 Git LFS: (0 of 0 files, 7 skipped) 0 B / 0 B, 879.11 KB skipped
 ```
-
-```sh
-$ git lfs push origin master --all
-Locking support detected on remote "origin". Consider enabling it with:
-  $ git config 'lfs.http://git-server.com/user/repo.locksverify' true
-Git LFS: (0 of 0 files, 7 skipped) 0 B / 0 B, 879.11 KB skipped
-```
