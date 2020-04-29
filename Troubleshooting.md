@@ -18,6 +18,7 @@ Sometimes things don't go exactly right.  Here are some tips for basic troublesh
 ### Common Issues
 
 * If you're adding a new pattern with `git lfs track` and it doesn't seem to be effective, try running `git check-attr filter FILENAME` to make sure the `filter` attribute is set to `lfs`.  If it's not, adjust your `.gitattributes` file so that the patterns match your file.
+* In a `.gitattributes` file, Git does not treat directories as matching the directory and everything underneath it; instead, they match nothing.  If you want to match a directory `foo` and all its contents, use the pattern `foo/**`.
 
 ## Server-Side Issues
 
