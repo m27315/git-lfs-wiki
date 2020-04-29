@@ -8,4 +8,5 @@ After that
 * [[Installation]]
 * [[Implementations]]
 * [[File Locking]]
+* [[Troubleshooting]]
 * [[Limitations]]
