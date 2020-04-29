@@ -19,6 +19,7 @@ Sometimes things don't go exactly right.  Here are some tips for basic troublesh
 
 * If you're adding a new pattern with `git lfs track` and it doesn't seem to be effective, try running `git check-attr filter FILENAME` to make sure the `filter` attribute is set to `lfs`.  If it's not, adjust your `.gitattributes` file so that the patterns match your file.
 * In a `.gitattributes` file, Git does not treat directories as matching the directory and everything underneath it; instead, they match nothing.  If you want to match a directory `foo` and all its contents, use the pattern `foo/**`.
+* If you see an error message that says “Authentication required” (and any additional text), that message means your credentials are potentially bad.  To clear them, try running `echo "url=$(git remote get-url origin)" | git credential erase` (assuming your remote is `origin`).  You will be prompted for new credentials next time you push.  Note that this may not work if you're using Git Credential Manager for Windows; see [this issue](https://github.com/microsoft/Git-Credential-Manager-for-Windows/issues/703) for more details.
 
 ## Server-Side Issues
 
