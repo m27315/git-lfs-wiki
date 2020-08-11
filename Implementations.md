@@ -17,6 +17,7 @@
 * [kzwang/node-git-lfs](https://github.com/kzwang/node-git-lfs) - a Javascript implementation that supports S3 and MongoDB GridFS
 * [saracen/lfscache](https://github.com/saracen/lfscache) - a Git LFS Caching proxy, for putting in-between multiple clients (users, build servers) and your LFS server.
 * [gitlit](https://github.com/S2-/gitlit) - A gui for Git LFS file locks
+* [Giftless](https://github.com/datopian/giftless) - A flexible Git LFS server implemented in Python 3.x. Currently supports local, Azure and Google Cloud backends, with direct-to-cloud upload and JWT based authentication / authorization.
 
 # Paid Commercial (some with free versions for small teams)
 * [GitHub.com](https://github.com/) - Supports git-lfs for files up to 2 GiB \([pricing](https://github.com/pricing)\)
