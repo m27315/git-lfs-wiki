@@ -292,3 +292,20 @@ Now, `ls .git/lfs/objects/98/ea` shows:
     98ea6e4f216f2fb4b69fff9b3a44842c38686ca685f3f55dc48c5d3fb1107be4
 
 You can also generate a pointer using `git lfs pointer`, but does not create lfs objects.
+
+## Untrack and Remove files from LFS ##
+
+You can also untrack all files of a certain type from lfs and remove it from the cache:
+
+```
+git lfs untrack "*file-type"
+git rm --cached "*file-type"
+```
+If you would like to add these files back to regular git tracking and commit them, you can do the following: 
+
+```
+git add "*file-type"
+git commit -m "restore "*file-type" to git from lfs"
+```
+
+note: "*file-type" is formatted as "*.mp4"
