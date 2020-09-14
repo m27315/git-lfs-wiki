@@ -5,6 +5,7 @@ Welcome to the Git LFS Wiki.
 Here is the [[Tutorial]]. Read it first.
 
 After that
+* [[FAQ]]
 * [[Installation]]
 * [[Implementations]]
 * [[File Locking]]

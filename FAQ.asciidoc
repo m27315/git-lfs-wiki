@@ -1,0 +1,49 @@
+= FAQ
+
+These are some frequently asked questions about Git LFS and its usage.
+
+Does Git LFS provide a way to track files by size?::
+  No, it doesn't.  Unfortunately, Git itself doesn't specify a way to make
+  `.gitattributes` patterns apply to files of a certain size and we rely on
+  the `.gitattributes` file to specify which files are tracked by Git LFS.
++
+If you know that all large files are in a given directory, say `foo`, you can
+track files in that directory with `git lfs track 'foo/**``.  If all else fails,
+you can try something like the following alias to track all files larger than 1
+MiB:
++
+[source,shell-session]
+----
+track-large = "!git ls-files | xargs -I{} find {} -size +1m | xargs -I{} git lfs track --filename {}"
+----
+
+Why doesn't Git LFS handle files larger than 4 GiB on Windows?::
+  Git LFS itself handles these files just fine.  However, Git LFS is usually
+  invoked by Git, and Git itself on Windows doesn't handle files using smudge
+  and clean filters (like Git LFS) that are larger than 4 GiB.  As soon as Git
+  handles this, Git LFS will work with it automatically.
++
+In the mean time, you can set the environment variable `GIT_LFS_SKIP_SMUDGE` to
+`1` and run `git lfs pull` to pull down the LFS files.  This bypasses Git's
+smudging functionality and therefore avoids its limitations.
+
+Why do I end up with some of my working tree files constantly showing as modified?::
+  This can happen if someone made a commit to a file that's tracked by Git LFS
+  but didn't have Git LFS properly set up on their system.  The objects that
+  were checked into the repository are Git objects, not the pointers to Git LFS
+  objects, and when Git checks these files out, it shows them as modified.
++
+Users frequently find that this cannot be changed by doing `git reset --hard` or
+other techniques because Git then checks the files out and marks them as
+modified again.  The best way to solve this problem is by fixing the files and
+the committing the change, which you can do with the following on an otherwise
+clean tree:
++
+[source,shell-session]
+----
+$ git add --renormalize .
+$ git commit -m "Fix broken LFS files"
+----
++
+To prevent this from reoccurring in the future, make sure that everyone working
+with large files on a project has run `git lfs install` at least once.
