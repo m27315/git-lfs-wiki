@@ -223,7 +223,7 @@ git lfs migrate import --include="*.mp4" --include-ref=refs/heads/master --inclu
 * Push the converted repository as a new repository:
 
 ```
-git push
+git push --force
 ```
 
 ### Cleaning up the .git directory after migrating
