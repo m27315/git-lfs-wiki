@@ -1,4 +1,4 @@
-# Git LFS Tutorial 
+# Git LFS Tutorial
 
 First things first, install git 1.8.2 or newer and then install git-lfs (See [here](Installation))
 
@@ -48,7 +48,7 @@ To see the list of files being tracked by git-lfs, run `git lfs ls-files`. You w
 
 Next, you need to add `.gitattributes` to your git repository. `git lfs track` stores the tracked files patterns in `.gitattributes`. This way when the repo is cloned, the tracked file patterns are preserved.
 
-    git add .gitattributes 
+    git add .gitattributes
 
 We can also add the `*.bin` files now that they are tracked via git-lfs.
 
@@ -81,7 +81,7 @@ f05131d24d * cat.bin
 
 ## LFS URL ##
 
-When using a git server that supports lfs, the lfs url defaults upon clone/adding a remote. However, sometimes the LFS server and git server are two separate services (such as the [lfs-test-server](https://github.com/github/lfs-test-server)). 
+When using a git server that supports lfs, the lfs url defaults upon clone/adding a remote. However, sometimes the LFS server and git server are two separate services (such as the [lfs-test-server](https://github.com/github/lfs-test-server)).
 
 To see the lfs url, run `git lfs env`
 
@@ -126,7 +126,7 @@ Since git-lfs only supports http/https, git will need to authenticate over http/
 - Linux - [Cacher](https://help.github.com/articles/caching-your-github-password-in-git/#platform-linux) will store the passwords in memory so you only have to enter the password once until the session timesout (usually 900 seconds)
 - Mac - [osxkeychain](https://help.github.com/articles/caching-your-github-password-in-git/#platform-mac) to use the osx keychain for your password.
 - Windows - [wincred](https://help.github.com/articles/caching-your-github-password-in-git/#platform-windows) is the default built in for windows and should be good for most uses. There is another helper you can use called the [Git Credential Manager for Windows](https://github.com/Microsoft/Git-Credential-Manager-for-Windows) aka wincred, the successor of the old winstore helper. It has some extra authentication support for GitHub and VSTS.
-- Store - The final option is to store your username and password using the [store](https://git-scm.com/docs/git-credential-store) helper. This should only be used when no other option is available (such as automatic private builds on trusted server) 
+- Store - The final option is to store your username and password using the [store](https://git-scm.com/docs/git-credential-store) helper. This should only be used when no other option is available (such as automatic private builds on trusted server)
 
 ## Adding git-lfs to a pre-existing repo  ##
 
@@ -156,7 +156,7 @@ git commit -m "Update some more"
 git tag four
 ```
 
-Now lets decide we want `*.bin` files to be turned into lfs objects. 
+Now lets decide we want `*.bin` files to be turned into lfs objects.
 
 ```
 git lfs track '*.bin'
@@ -301,7 +301,7 @@ You can also untrack all files of a certain type from lfs and remove it from the
 git lfs untrack "*file-type"
 git rm --cached "*file-type"
 ```
-If you would like to add these files back to regular git tracking and commit them, you can do the following: 
+If you would like to add these files back to regular git tracking and commit them, you can do the following:
 
 ```
 git add "*file-type"
