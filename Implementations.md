@@ -12,6 +12,7 @@
 * [github/lfs-test-server](https://github.com/github/lfs-test-server) - reference server implementation
 * [jasonwhite/rudolfs](https://github.com/jasonwhite/rudolfs) - An encrypting, caching, Git LFS server with an S3 back-end (Rust).
 * [meltingice/git-lfs-s3](https://github.com/meltingice/git-lfs-s3) - store large files in Amazon S3 (v1 legacy api only).
+* [metalogical/BigFiles](https://github.com/metalogical/BigFiles/) – Go implementation targeting the S3 API, with support for AWS Lambda.
 * [mgax/lfs](https://github.com/mgax/lfs) - a Python implementation of Git LFS Server that stores blobs on the filesystem (v1 legacy api only).
 * [alanedwardes/Estranged.Lfs](https://github.com/alanedwardes/Estranged.Lfs) - a C#.net implementation using AWS Lambda, API Gateway and S3.
 * [kzwang/node-git-lfs](https://github.com/kzwang/node-git-lfs) - a Javascript implementation that supports S3 and MongoDB GridFS
