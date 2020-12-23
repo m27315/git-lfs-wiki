@@ -18,9 +18,12 @@
 * [kzwang/node-git-lfs](https://github.com/kzwang/node-git-lfs) - a Javascript implementation that supports S3 and MongoDB GridFS
 * [saracen/lfscache](https://github.com/saracen/lfscache) - a Git LFS Caching proxy, for putting in-between multiple clients (users, build servers) and your LFS server.
 * [gitlit](https://github.com/S2-/gitlit) - A gui for Git LFS file locks
-* [datopian/giftless](https://github.com/datopian/giftless) - A standalone flexible Git LFS server implemented in Python 3.x. Currently supports local, Azure and Google Cloud backends, with direct-to-cloud upload and JWT based authentication / authorization.
+* [datopian/giftless](https://github.com/datopian/giftless) - A modern standalone pluggable Git LFS server implemented in Python 3.x supporting the latest protocols. Pluggable backends with existing support for local, Azure, S3 and Google Cloud backends. Pluggable  JWT based authentication / authorization mechanism. Also includes multipart support (extension to LFS protocol).
+  * https://github.com/datopian/giftless-client: LFS client library in Python. Works with LFS in general as well as Giftless in particular. 
+  * https://github.com/datopian/giftless-client-js: LFS client library in Javascript. Works with LFS in general as well as Giftless in particular.
 
 # Paid Commercial (some with free versions for small teams)
+
 * [GitHub.com](https://github.com/) - Supports git-lfs for files up to 2 GiB \([pricing](https://github.com/pricing)\)
 * [GitHub Enterprise](https://enterprise.github.com) - Supports git-lfs on your on-premises GitHub system.
 * [Artifactory](http://www.jfrog.com/artifactory/features/#addon-git-lfs) - store large files in a dedicated [Binary Repository Manager](https://en.wikipedia.org/wiki/Binary_repository_manager)
