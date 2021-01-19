@@ -51,3 +51,9 @@ with large files on a project has run `git lfs install` at least once.
 How do I enable git diff to work on LFS files?:::
   You can run `git config diff.lfs.textconv cat`, which will normal diffs if
   your files are text files.
+
+How do I switch from large objects to pointer files in the working tree?:::
+  If your working tree is clean, you can run
+  `GIT_LFS_SKIP_SMUDGE=1 git read-tree -u --reset HEAD` to switch back to
+  pointer files.  Note that if you have changes in your working directory, this
+  will destroy them.
