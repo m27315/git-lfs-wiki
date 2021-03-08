@@ -57,3 +57,12 @@ How do I switch from large objects to pointer files in the working tree?:::
   `GIT_LFS_SKIP_SMUDGE=1 git read-tree -u --reset HEAD` to switch back to
   pointer files.  Note that if you have changes in your working directory, this
   will destroy them.
+
+How do I convert from using Git LFS to a plain Git repository?::
+  If you'd like to stop using Git LFS and switch back to storing your large
+  files in the plain Git format, you can do so with `git lfs migrate export
+  --everything`.  Note that you will need to provide and appropriate `--include`
+  option to match all the patterns that you currently have tracked in any ref.
++
+This also rewrites history, so the Git object IDs of many, if not all, of your
+objects will change.
