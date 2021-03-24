@@ -21,6 +21,7 @@
 * [datopian/giftless](https://github.com/datopian/giftless) - A modern standalone pluggable Git LFS server implemented in Python 3.x supporting the latest protocols. Pluggable backends with existing support for local, Azure, S3 and Google Cloud backends. Pluggable  JWT based authentication / authorization mechanism. Also includes multipart support (extension to LFS protocol).
   * https://github.com/datopian/giftless-client: LFS client library in Python. Works with LFS in general as well as Giftless in particular. 
   * https://github.com/datopian/giftless-client-js: LFS client library in Javascript. Works with LFS in general as well as Giftless in particular.
+* [AKSW/git_lfs_server_sshauth](https://github.com/AKSW/git_lfs_server_sshauth) - a basic single-script Git LFS server with local store and SSH for authentication
 
 # Paid Commercial (some with free versions for small teams)
 
