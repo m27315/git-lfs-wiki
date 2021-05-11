@@ -33,6 +33,11 @@ Why do I end up with some of my working tree files constantly showing as modifie
   were checked into the repository are Git objects, not the pointers to Git LFS
   objects, and when Git checks these files out, it shows them as modified.
 +
+There are also several other possible ways to encounter this problem, such as an
+incomplete migration of your repository.  For example, you should not use `git
+lfs track` to track patterns that are already in your repository without running
+`git add --renormalize .`, since that can lead to this problem.
++
 Users frequently find that this cannot be changed by doing `git reset --hard` or
 other techniques because Git then checks the files out and marks them as
 modified again.  The best way to solve this problem is by fixing the files and
@@ -44,6 +49,8 @@ clean tree:
 $ git add --renormalize .
 $ git commit -m "Fix broken LFS files"
 ----
++
+This requires that every branch you want to fix have this done to it.
 +
 To prevent this from reoccurring in the future, make sure that everyone working
 with large files on a project has run `git lfs install` at least once.
