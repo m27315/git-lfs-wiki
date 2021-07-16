@@ -59,6 +59,31 @@ How do I enable git diff to work on LFS files?:::
   You can run `git config diff.lfs.textconv cat`, which will normal diffs if
   your files are text files.
 
+How do I enable git diff to work on LFS files based on extension or path?:::
+  If the above solution is too broad, each entry in the `.gitattributes` file
+  can be customized by creating a custom global converter:
++
+[source,shell-session]
+----
+$ git config --global diff.lfstext.textconv cat
+----
++
+Any given `.gitattributes` entry for large text files can be customized to use
+this global text converter (e.g., patch files), whereas binary formats can
+continue to use the conventional lfs diff tool, like so:
+[source,shell-session]
+----
+$ cat .giattributes
+...
+*.bin filter=lfs diff=lfs merge=lfs -text
+*.patch filter=lfs diff=lfstext merge=lfs -text
+...
+----
++
+Be advised that all developers sharing this repo with such a modified
+`.gitattributes` file must have similarly configured the `lfstext` text
+converter, whether globally or on per repository basis.
+
 How do I switch from large objects to pointer files in the working tree?:::
   If your working tree is clean, you can run
   `GIT_LFS_SKIP_SMUDGE=1 git read-tree -u --reset HEAD` to switch back to
